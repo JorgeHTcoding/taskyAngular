@@ -23,6 +23,8 @@ import {trigger, style, transition, animate, state} from '@angular/animations'
 export class LandingPageComponent implements OnInit {
   public state:string ="inactive";
   public state2:string ="active";
+  public log:boolean = false;
+  public reg:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -32,4 +34,14 @@ export class LandingPageComponent implements OnInit {
     this.state2 = this.state2=== 'active' ? 'inactive' :'active'
     
   }
+  triggerLog(){
+    this.log = this.log===false ? true :false;
+    if(this.state=='inactive' || this.log==false){
+      this.trigger()
+    }
+  }
+  triggerReg(){
+    this.log = this.log===true ? false :true;
+  }
 }
+//arreglar el trigger

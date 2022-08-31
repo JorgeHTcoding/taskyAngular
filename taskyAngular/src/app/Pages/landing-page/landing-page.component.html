@@ -1,6 +1,6 @@
 <div class="body">
     <div class="header">
-        <app-header></app-header>
+        <app-header (newItemEvent)="triggerLog()"></app-header>
 
     </div>
 <div class="cuerpo">
@@ -16,7 +16,17 @@
           
         </div>
         <div class="register" [@enterRegister]="state">
-            "insertar modal" sadfa
+            <div class="icon">
+                <img src="../../../assets/undraw_sign_in_re_o58h.svg" alt="sigin">
+            </div>
+            <div class="form">
+                <div class="reg" *ngIf="log==false">
+                    <app-register-component></app-register-component>
+                </div>
+                <div class="login" *ngIf="log==true">
+                    <app-login-component></app-login-component>
+                </div>
+            </div>
         </div>
     </div>
 </div>

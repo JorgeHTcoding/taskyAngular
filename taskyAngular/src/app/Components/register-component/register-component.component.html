@@ -22,7 +22,7 @@
                             minlength="8" required>
                         <div class="invalid-feedback" *ngIf="(password.dirty || password.touched) && pass2.invalid">
                             <div *ngIf="password.errors?.['required']">Password required</div>
-                            <div *ngIf="password.errors?.['minlength']">Password must be at least 8 characters long
+                            <div *ngIf="password.errors?.['minlength']">Must be at least 8 characters long
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                         minlength="8" required>
                     <div class="invalid-feedback" *ngIf="(pass2.dirty || pass2.touched) && pass2.invalid">
                         <div *ngIf="pass2.errors?.['required']">Repeat your password</div>
-                        <div *ngIf="pass2.errors?.['minlength']">Password must be at least 8 characters long
+                        <div *ngIf="pass2.errors?.['minlength']">Must be at least 8 characters long
                         </div>
                     </div>
                 </div>

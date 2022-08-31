@@ -4,9 +4,9 @@
     </div>
     <div class="menu">
         <li><a routerLink="/" class="activa">Home</a></li>
-        <li><a routerLink= '/busqueda-profesional' class="no-activa">Conocenos</a></li>
-        <li *ngIf="!logged"><a routerLink= "/busqueda-evento" class="no-activa">Inicia Sesión</a>
-        <li *ngIf="logged"><a routerLink= "/busqueda-evento" class="no-activa">Cerrar Sesión</a>
+        <li><a routerLink= '/busqueda-profesional' class="no-activa">About Us</a></li>
+        <li *ngIf="!logged"><a routerLink= "/busqueda-evento" class="no-activa">Log Out</a>
+        <li *ngIf="logged"><a (click)="login()" routerLink= "/busqueda-evento" class="no-activa">Log In</a>
             
     </div>
 </div>

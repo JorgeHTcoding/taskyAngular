@@ -2,8 +2,7 @@
     display:flex;    
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 400px;    
+    
 }
 .bloqueForm{  
     display:flex;
@@ -38,7 +37,7 @@
     align-items: center;
     height: 30px;
     border-radius: 0%;
-    width: 45%;
+    width: 50%;
     z-index: 60000;
     background-color: #FFFFFF;   
     border: 2px solid #FFFFFF;
@@ -51,8 +50,15 @@
     padding-right: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
+    align-self: center;
+    border:none;
+    background-color: white;
+    border-radius: 20px;
+    padding: .3em;
+    width: 50%;
 }
 .register:hover {
-    background-color: transparent ;
-    color: #FFFFFF;
+    background-color: #A8A542;
+    transition: 0.3s;
+    color:white;
 }
