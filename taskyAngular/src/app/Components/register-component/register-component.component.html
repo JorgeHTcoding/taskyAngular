@@ -1,1 +1,50 @@
-<p>register-component works!</p>
+<div class="cuerpo">
+    <div class="bloqueForm">
+        <div class="title">
+            <div>Register</div>
+        </div>
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+            <div class="form-group">
+                <div class="campos">
+                    <div class="bloqueInput">
+                        <p class="form-label">New User</p>
+                        <input type="text" name="nick" class="form-control" [(ngModel)]="user.nick" #nick="ngModel"
+                            [ngClass]="{'is-invalid': (nick.dirty || nick.touched) && nick.invalid}" required>
+                        <div *ngIf="(nick.dirty || nick.touched) && nick.invalid" class="invalid-feedback">
+                            <div *ngIf="nick.errors?.['required']">You must introduce a user name</div>
+                        </div>
+                    </div>
+                    <div class="bloqueInput">
+                        <p class="form-label">Password</p>
+                        <input type="password" name="password" class="form-control" [(ngModel)]="user.password"
+                            #password="ngModel"
+                            [ngClass]="{'is-invalid': (password.dirty || password.touched) && password.invalid }"
+                            minlength="8" required>
+                        <div class="invalid-feedback" *ngIf="(password.dirty || password.touched) && pass2.invalid">
+                            <div *ngIf="password.errors?.['required']">Password required</div>
+                            <div *ngIf="password.errors?.['minlength']">Password must be at least 8 characters long
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloqueInput">
+                    <p class="form-label">Repeat your password*</p>
+                    <input type="password" name="pass2" class="form-control" [(ngModel)]="register.pass2"
+                        #pass2="ngModel" [ngClass]="{'is-invalid': (pass2.dirty || pass2.touched) && pass2.invalid }"
+                        minlength="8" required>
+                    <div class="invalid-feedback" *ngIf="(pass2.dirty || pass2.touched) && pass2.invalid">
+                        <div *ngIf="pass2.errors?.['required']">Repeat your password</div>
+                        <div *ngIf="pass2.errors?.['minlength']">Password must be at least 8 characters long
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="bloqueBoton">
+                        <button type="submit" class="register" [disabled]="userForm.invalid">Register</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

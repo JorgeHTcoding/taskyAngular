@@ -14,6 +14,10 @@ import { EditTaskComponent } from './Components/edit-task/edit-task.component';
 import { CreateProjectComponent } from './Components/create-project/create-project.component';
 import { LandingUserComponent } from './Pages/landing-user/landing-user.component';
 import { InfoProjectComponent } from './Components/info-project/info-project.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,17 @@ import { InfoProjectComponent } from './Components/info-project/info-project.com
     EditTaskComponent,
     CreateProjectComponent,
     LandingUserComponent, 
-    InfoProjectComponent
+    InfoProjectComponent,
+    HeaderComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
