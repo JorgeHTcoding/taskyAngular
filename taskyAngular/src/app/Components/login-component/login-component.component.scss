@@ -1,0 +1,63 @@
+.cuerpo{  
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;  
+    background-color: gray; 
+}
+.bloqueForm{  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.form-label{
+    color: #FFFFFF;
+}
+.form-control{
+    width: 230px;
+}
+.bloqueInput{
+    padding-top: 15px;    
+}
+.bloqueBoton{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 0%;
+    width: 45%;
+    z-index: 60000;
+    background-color: #FFFFFF;   
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;  
+    font-size: 1.1em;       
+    color:none ;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.login:hover {
+    background-color: transparent ;
+    color: #FFFFFF;
+}
