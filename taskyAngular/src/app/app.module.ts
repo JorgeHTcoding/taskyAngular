@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
@@ -14,6 +14,7 @@ import { EditTaskComponent } from './Components/edit-task/edit-task.component';
 import { CreateProjectComponent } from './Components/create-project/create-project.component';
 import { LandingUserComponent } from './Pages/landing-user/landing-user.component';
 import { InfoProjectComponent } from './Components/info-project/info-project.component';
+import { HeaderComponent } from './Components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,13 @@ import { InfoProjectComponent } from './Components/info-project/info-project.com
     EditTaskComponent,
     CreateProjectComponent,
     LandingUserComponent, 
-    InfoProjectComponent
+    InfoProjectComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

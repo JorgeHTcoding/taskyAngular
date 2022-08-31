@@ -1,6 +1,32 @@
 .cont-header{
-    height: 10vh;
+    height: 5vh;
     width: 100vw;
-    background: grey;
-    
+    background: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 0px 0px 20px 20px;
+    .logo{
+        padding-left: 1em;
+        height: 5vh;
+        img{
+            height: 5vh;
+        }
+    }
+    .menu{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width:50%;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
 }

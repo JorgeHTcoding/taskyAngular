@@ -1,8 +1,12 @@
 <div class="cont-header">
     <div class="logo">
-
+        <img src="../../../assets/Tasky.png">
     </div>
     <div class="menu">
-        
+        <li><a routerLink="/" class="activa">Home</a></li>
+        <li><a routerLink= '/busqueda-profesional' class="no-activa">Conocenos</a></li>
+        <li *ngIf="!logged"><a routerLink= "/busqueda-evento" class="no-activa">Inicia Sesión</a>
+        <li *ngIf="logged"><a routerLink= "/busqueda-evento" class="no-activa">Cerrar Sesión</a>
+            
     </div>
 </div>

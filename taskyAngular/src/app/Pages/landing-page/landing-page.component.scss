@@ -1,0 +1,107 @@
+.body{
+height: 100vh;
+width: 100vw;
+background: rgb(88,131,140);
+background: linear-gradient(180deg, rgba(88,131,140,1) 0%, rgba(73,31,99,1) 100%);
+overflow: hidden;
+}
+
+.left{
+
+height: 100px;
+width: 100px;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    background: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 20px 20px 0px 0px;
+}
+.f-right{
+    padding-right: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+    height: 80%;
+    img{
+        height: 90%;
+    }
+}
+
+.cuerpo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80vh;
+    align-items:center;
+    .left{
+        height: 80%;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.548);
+        border-radius: 20px;
+        padding: 1em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .c-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 50%;
+    }
+    .right{
+        width: 50%;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.548);
+        border-radius: 20px 0px 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        .mockup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 80%;
+                
+            }
+        }
+    }
+}
+
+#register{
+    align-self: center;
+    border:none;
+    background-color: white;
+    border-radius: 20px;
+    padding: .3em;
+    width: 50%;
+
+}
+#register:hover{
+    background-color: #A8A542;
+    transition: 0.3s;
+    color:white;
+}
+.register{
+    
+    width: 80%;
+    height: 80%;
+}
