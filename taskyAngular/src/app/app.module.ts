@@ -16,6 +16,10 @@ import { LandingUserComponent } from './Pages/landing-user/landing-user.componen
 import { InfoProjectComponent } from './Components/info-project/info-project.component';
 import { HeaderComponent } from './Components/header/header.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,11 +35,15 @@ import { HeaderComponent } from './Components/header/header.component';
     LandingUserComponent, 
     InfoProjectComponent,
     HeaderComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+.cuerpo{  
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;    
+}
+.bloqueForm{  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%
+    
+}
+.title{
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.form-label{
+    color: #FFFFFF;
+}
+
+.bloqueInput{
+    padding-top: 15px;    
+}
+.bloqueBoton{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 0%;
+    width: 45%;
+    z-index: 60000;
+    background-color: #FFFFFF;   
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;  
+    font-size: 1.1em;       
+    color:none ;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.register:hover {
+    background-color: transparent ;
+    color: #FFFFFF;
+}
