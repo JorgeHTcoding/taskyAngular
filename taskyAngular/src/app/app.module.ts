@@ -19,6 +19,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { ProjectCardComponent } from './Components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { RouterModule } from '@angular/router';
     LandingUserComponent, 
     InfoProjectComponent,
     HeaderComponent,
+    ProjectCardComponent,
 
   ],
   imports: [

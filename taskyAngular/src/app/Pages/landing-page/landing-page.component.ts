@@ -35,13 +35,19 @@ export class LandingPageComponent implements OnInit {
     
   }
   triggerLog(){
-    this.log = this.log===false ? true :false;
-    if(this.state=='inactive' || this.log==false){
-      this.trigger()
-    }
+    if(this.log)
+    this.trigger()
+    this.log = true
+    this.reg = false
   }
+  
   triggerReg(){
-    this.log = this.log===true ? false :true;
+    if(this.reg){
+        this.trigger();
+      }
+    this.log = false
+    this.reg = true;
+    
   }
+  
 }
-//arreglar el trigger

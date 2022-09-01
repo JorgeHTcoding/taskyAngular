@@ -7,7 +7,7 @@
     <div class="c-left">
         <div class="left">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, non laborum accusamus eligendi earum quibusdam atque dicta excepturi! Obcaecati odio, at aut voluptatum impedit commodi?        
-            <button type="button" id="register"  (click)='trigger()'> Register </button>
+            <button type="button" id="register" (click)="triggerReg()" > Register </button>
         </div>
     </div>
     <div class="right">
@@ -20,7 +20,7 @@
                 <img src="../../../assets/undraw_sign_in_re_o58h.svg" alt="sigin">
             </div>
             <div class="form">
-                <div class="reg" *ngIf="log==false">
+                <div class="reg" *ngIf="reg==true">
                     <app-register-component></app-register-component>
                 </div>
                 <div class="login" *ngIf="log==true">
